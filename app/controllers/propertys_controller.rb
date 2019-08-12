@@ -1,2 +1,0 @@
-class PropertysController < ApplicationController
-end
