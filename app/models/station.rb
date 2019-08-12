@@ -1,5 +1,4 @@
-class Station < ApplicationRecord
-    validates :route_name, presence: true, length: { maximum: 20 }
-    validates :station_name, presence: true, length: { maximum: 20 }
-    validates :station_name, presence: true, length: { maximum: 20 }
+class Station < ApplicationRecordbe
+  belongs_to :property,optional: true
+  validates :rout_name, :station_name, :time, presence: true
 end
