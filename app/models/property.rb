@@ -1,9 +1,5 @@
 class Property < ApplicationRecord
-    validates :name, presence: true, length: { maximum: 20 }
-    validates :price, presence: true, length: { maximum: 15 }
-    validates :adress, presence: true, length: { maximum: 20 }
-    validates :adress, presence: true, length: { maximum: 10 }
-    validates :content, presence: true, length: { maximum: 50 }
+  has_many :stations
+  accepts_nested_attributes_for :stations, allow_destroy: true, reject_if: :all_blank
+  #validates :name, :price, :address, :age, :content, presence: true
 end
-
-
