@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .pro_line{
+    border-bottom: 1px solid gray;
+  }
+
